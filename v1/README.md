@@ -1,4 +1,16 @@
 # API v1
-Base URI &mdash; `https://api.tripteller.co/1/`
+Base URI &mdash; `https://api.tripteller.co/1/`<br>
+While not required, we always suggest using SSL when accessing our API.
 
-Since we currently do not provide OAauth, SSL is not required. However, we always suggest encrypting any requests made when possible.
+## JSONP
+If you are unable to use CORS (esp. with older browsers), we support JSONP.
+
+#### Example request
+`GET https://api.tripteller.co/1/drugs?callback=done`
+
+#### Example response
+    done({
+        "drugs": {
+            ...
+        }
+    });
