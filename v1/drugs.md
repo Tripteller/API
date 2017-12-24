@@ -1,4 +1,6 @@
 # Drugs
+A drug is any psychoactive chemical listed on Tripteller.
+
 | Request | Description |
 | --- | --- |
 | [GET /drugs](#get-drugs) | Return all drugs on Tripteller |
@@ -10,10 +12,10 @@
 | `id` | string | A URL-safe, case-insensitive version of the name |
 | `name` | string | The full name of the drug |
 | `alt_names` | array | A list of alternative names for the drug |
-| `class` | [Class](/Tripteller/API/blob/master/v1/classes.md) | The class this drug is a part of |
-| `description` | string | A Markdown-formatted description for this drug |
+| `class` | [Class](/Tripteller/API/blob/master/v1/classes.md) | The class the drug is a part of |
+| `description` | string | A Markdown-formatted description for the drug |
 | `doses` | object | Doses in micrograms (plus material) for each ROA |
-| `dosing_notes` | string | Information on dosing this drug |
+| `dosing_notes` | string | Information on dosing the drug |
 | `image` | string | An SVG image of the drug's chemical structure |
 
 ## `GET /drugs`
