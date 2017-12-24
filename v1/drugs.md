@@ -4,15 +4,7 @@
 | [GET /drugs](#get-drugs) | Return all drugs on Tripteller |
 | [GET /drugs/:id](#get-drugsid) | Return a drug by its `id` |
 
-## `GET /drugs`
-Return all drugs on Tripteller.
-
-#### Parameters
-| Name | Type | Description |
-| --- | --- | --- |
-| `class` | Optional | Only return drugs by this class |
-
-#### Response
+#### Variables
 | Name | Type | Description |
 | --- | --- | --- |
 | `id` | string | A URL-safe, case-insensitive version of the name |
@@ -23,6 +15,14 @@ Return all drugs on Tripteller.
 | `doses` | object | Doses in micrograms (plus material) for each ROA |
 | `dosing_notes` | string | Information on dosing this drug |
 | `image` | string | An SVG image of the drug's chemical structure |
+
+## `GET /drugs`
+Return all drugs on Tripteller.
+
+#### Parameters
+| Name | Type | Description |
+| --- | --- | --- |
+| `class` | Optional | Only return drugs by this class |
 
 #### Example request
     GET https://api.tripteller.co/1/drugs
