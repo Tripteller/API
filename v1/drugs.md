@@ -73,6 +73,7 @@ Return all drugs on Tripteller.
         },
         ...
     ]
+
 ## `GET /drugs/:id`
 Return a drug by its `id`.
 
