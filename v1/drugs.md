@@ -31,11 +31,13 @@ Return all drugs on Tripteller.
             "id": "lsd",
             "name": "LSD",
             "class": "psychedelic"
+            ...
         },
         {
             "id": "1p-lsd",
             "name": "1P-LSD",
             "class": "psychedelic"
+            ...
         },
         ...
     ]
