@@ -8,10 +8,10 @@ Base URI &mdash; `https://api.tripteller.co/1/`
     GET https://api.tripteller.co/1/drugs
 
 #### Example response
-    drugs([
-        {
-            "id": "lsd"
-            ...
-        },
+[
+    {
+        "id": "lsd"
         ...
-    ]);
+    },
+    ...
+]
